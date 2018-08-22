@@ -52,7 +52,7 @@ while [ "$1" != "" ]; do
 done
 
 echo "[Install build environment, the chrony, ntpdate and set the ntpdate]"
-sudo apt-get install -y chrony ntpdate build-essential
+sudo apt-get install -y ntp ntpdate build-essential
 sudo ntpdate -q ntp.ubuntu.com
 
 # Check to see if other packages were specified
